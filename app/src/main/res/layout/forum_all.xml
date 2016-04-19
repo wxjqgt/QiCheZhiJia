@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qianfeng.app_qichezhijia.MyView.MyScrollView
+            android:id="@+id/hsv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/mylayout"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="全部"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="汽车之家之年"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="媳妇当车模"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="美人“记”"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="论坛名人堂"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="论坛讲师"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="精挑细选"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="现身说法"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="高端阵地"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="电动车"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </com.qianfeng.app_qichezhijia.MyView.MyScrollView>
+
+        <ImageView
+
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/bar_btn_icon_album" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bcbcbc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_forum_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <LinearLayout
+            android:id="@+id/forum_all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="正在加载数据"
+                android:textColor="#25305c" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

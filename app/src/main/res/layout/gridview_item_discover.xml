@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:paddingBottom="20dp"
+    >
+
+    <ImageView
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/textView_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="no data" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/textView_youhuicar"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:textColor="#ff0040"
+        android:layout_height="wrap_content"
+        android:text="no data" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/textView_qianggoucar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="no data" />
+
+
+</LinearLayout>

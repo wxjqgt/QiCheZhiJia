@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.gt.qichezhijia.Activitys.MainActivity_home">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="discover">
+
+        <TextView
+            android:id="@+id/text_discover_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            android:textColor="#154ab6"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_alignEnd="@+id/text_discover_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/text_discover_title"
+            android:layout_below="@+id/text_discover_title"
+            android:layout_marginTop="5dp"
+            android:background="#154ab6" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/convenientBanner"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/convenientBanner_icons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:canLoop="true" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/image_icon_dikoujia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/text_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/image_icon_dikoujia"
+                    android:layout_toRightOf="@+id/image_icon_dikoujia"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="no data" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_dikoujia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:button="@null"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="点击查看更多" />
+
+
+            </RelativeLayout>
+
+            <com.qianfeng.app_qichezhijia.coustoms.MyGridView
+                android:id="@+id/gridView_dikoujuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="1dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:paddingBottom="50dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/image_icon_yikoujia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/text_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/image_icon_yikoujia"
+                    android:layout_toRightOf="@+id/image_icon_yikoujia"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="no data" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_yikoujia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:button="@null"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="点击查看更多" />
+
+            </RelativeLayout>
+
+            <com.qianfeng.app_qichezhijia.coustoms.MyGridView
+                android:id="@+id/gridView_yikoujia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="5dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

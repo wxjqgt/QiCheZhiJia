@@ -1,0 +1,75 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/forum_car_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text1"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="品牌"/>
+            <TextView
+                android:id="@+id/text2"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="筛选"/>
+            <TextView
+                android:id="@+id/text3"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="降价"/>
+            <TextView
+                android:id="@+id/text4"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="二手车"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+
+            android:layout_height="match_parent"
+
+            android:src="@mipmap/bar_btn_icon_search_a"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bcbcbc"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/forum_car_viewpager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

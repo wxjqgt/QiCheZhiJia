@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/zuixin_item_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/typename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="typename"
+            android:textColor="#528ce2" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typename"
+            android:layout_margin="10dp"
+            android:text="title"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/guanzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="位观众" />
+
+        <TextView
+            android:id="@+id/reviewcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/guanzhong"
+            android:layout_toLeftOf="@+id/guanzhong"
+            android:layout_marginRight="5dp"
+            android:text="100" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zuixin_item_ima"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/zuixin_item_text1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zuixin_item_ima"
+        android:layout_margin="10dp"
+        android:text="time" />
+
+</RelativeLayout>

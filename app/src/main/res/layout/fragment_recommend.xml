@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gt.qichezhijia.Activitys.MainActivity_home">
+
+    <LinearLayout
+        android:id="@+id/daohanlan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="#080c1a"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="快报"
+            android:textColor="#080c1a"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="新闻"
+            android:textColor="#080c1a"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="导购"
+            android:textColor="#080c1a"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="改装"
+            android:textColor="#080c1a"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/bar_btn_icon_search_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/daohanlan"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3a57a3"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3a57a3"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3a57a3"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3a57a3"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3a57a3"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3a57a3"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_line">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
